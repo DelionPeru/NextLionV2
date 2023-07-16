@@ -1,0 +1,13 @@
+D:\DELION\PROYECTOS\NextDet\NextBlast\NextBlast\bin\Debug\NextBlast.exe.config
+D:\DELION\PROYECTOS\NextDet\NextBlast\NextBlast\bin\Debug\NextBlast.exe
+D:\DELION\PROYECTOS\NextDet\NextBlast\NextBlast\bin\Debug\NextBlast.pdb
+D:\DELION\PROYECTOS\NextDet\NextBlast\NextBlast\obj\Debug\NextBlast.csprojAssemblyReference.cache
+D:\DELION\PROYECTOS\NextDet\NextBlast\NextBlast\obj\Debug\NextBlast.nextblast.resources
+D:\DELION\PROYECTOS\NextDet\NextBlast\NextBlast\obj\Debug\NextBlast.Properties.Resources.resources
+D:\DELION\PROYECTOS\NextDet\NextBlast\NextBlast\obj\Debug\NextBlast.csproj.GenerateResource.cache
+D:\DELION\PROYECTOS\NextDet\NextBlast\NextBlast\obj\Debug\NextBlast.csproj.CoreCompileInputs.cache
+D:\DELION\PROYECTOS\NextDet\NextBlast\NextBlast\obj\Debug\NextBlast.exe
+D:\DELION\PROYECTOS\NextDet\NextBlast\NextBlast\obj\Debug\NextBlast.pdb
+D:\DELION\PROYECTOS\NextDet\NextBlast\NextBlast\obj\Debug\NextBlast.vistas.proyectoView.resources
+D:\DELION\PROYECTOS\NextDet\NextBlast\NextBlast\obj\Debug\NextBlast.vistas.importarView.resources
+D:\DELION\PROYECTOS\NextDet\NextBlast\NextBlast\obj\Debug\NextBlast.Vistas.PlantillaCargaView.resources
