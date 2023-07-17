@@ -2,6 +2,7 @@
 using NextBlast.Modelo;
 using System;
 using System.Collections.Generic;
+using System.Data.SQLite;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -17,7 +18,7 @@ namespace NextBlast.helper
             if (_Instancia == null) { _Instancia = new datosGlobal(); }
             return _Instancia;
         }
-        
+
         public datosGlobal() { }
 
         public Color primario = Color.FromArgb(0, 65, 120);
@@ -29,7 +30,7 @@ namespace NextBlast.helper
         public double yprom = 0;
 
         public Configuracion configuracion = new Configuracion();
-
+        public SQLiteConnection sqlite_conn = new SQLiteConnection();
         public double zoom = 1;
         public double dragx = 0;
         public double dragy = 0;
@@ -39,6 +40,8 @@ namespace NextBlast.helper
 
         // Listas
         public List<TaladroModelo> taladros = new List<TaladroModelo>();
+        public List<TipoTaladroModelo> tipotaladro = new List<TipoTaladroModelo>();
         public List<int> indicestaladros_cercanos = new List<int>();
+        public List<ExplosivoModelo> explosivos = new List<ExplosivoModelo>();
     }
 }

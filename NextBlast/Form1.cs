@@ -1,9 +1,12 @@
-﻿using NextBlast.Controladores.Taladro;
+﻿using NextBlast.Controladores.Explosivo;
+using NextBlast.Controladores.Taladro;
 using NextBlast.Controles;
+using NextBlast.Database;
 using NextBlast.diseño;
 using NextBlast.Grafico;
 using NextBlast.helper;
 using NextBlast.vistas;
+using NextBlast.Vistas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,6 +25,7 @@ namespace NextBlast
         public bool activaShit = false;
         datosGlobal objGlobal = datosGlobal.GetInstancia();
         TaladroControlador tc = new TaladroControlador();
+        Conexiondb conexiondb = new Conexiondb();
 
         // Diseño
         diseñoInterface di = new diseñoInterface();
@@ -47,6 +51,9 @@ namespace NextBlast
 
         ImportadorTaladroControlador itc = new ImportadorTaladroControlador();
 
+        // Vistas
+        PlantillaCargaView plantillaCargaView = new PlantillaCargaView();
+
         // Controles
         Mouse mouse;
 
@@ -57,7 +64,8 @@ namespace NextBlast
         TaladroGrafico taladroGrafico = new TaladroGrafico();
         graficos graficos = new graficos();
         TaladroGrafico TaladroGrafico = new TaladroGrafico();
-
+        ExplosivoControlador explosivoControlador = new ExplosivoControlador();
+        TaladroControlador taladroControlador = new TaladroControlador();
 
         public nextblast()
         {
@@ -68,6 +76,7 @@ namespace NextBlast
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            initDatabase();
             CheckForIllegalCrossThreadCalls = false;
             this.KeyPreview = true;
 
@@ -104,6 +113,20 @@ namespace NextBlast
             objGlobal.dragx = r.Item2;
             objGlobal.dragy = r.Item3;    
         }
+
+
+        // Database
+        void initDatabase()
+        {
+            objGlobal.sqlite_conn = conexiondb.CreateConnection();
+
+            // Get Explosivos
+            explosivoControlador.getExplosivos();
+
+            // Get Tipo Taladro
+            taladroControlador.getAll();
+        }
+
 
 
         // Diseño Interface
@@ -273,6 +296,19 @@ namespace NextBlast
 
             coorX = dat.Item1;
             coorY = dat.Item2;
+        }
+
+
+        // Tools Database
+        private void plantillasDeCargaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddOwnedForm(plantillaCargaView);
+            plantillaCargaView.ShowDialog();
+        }
+
+        private void nextblast_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            objGlobal.sqlite_conn.Close();
         }
     }
 }

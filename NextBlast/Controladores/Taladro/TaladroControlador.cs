@@ -1,4 +1,5 @@
-﻿using NextBlast.Global;
+﻿using NextBlast.Database;
+using NextBlast.Global;
 using NextBlast.helper;
 using NextBlast.Modelo;
 using System;
@@ -14,7 +15,8 @@ namespace NextBlast.Controladores.Taladro
     public class TaladroControlador
     {
         datosGlobal objGlobal = datosGlobal.GetInstancia();
-        
+        TipoTaladrodb tipoTaladrodb = new TipoTaladrodb();
+
         public void encontrarCercanos(
             List<TaladroModelo> taladros,
             double distancia)
@@ -112,6 +114,14 @@ namespace NextBlast.Controladores.Taladro
             punto.X = ((dragx + ox) * zoom);
             punto.Y = ((dragy + oy) * zoom);
             return punto;
+        }
+
+        public void getAll()
+        {
+            if (!tipoTaladrodb.getAll().Status)
+            {
+                Mensaje.Msj("Sucedió un Error al importar tipos de taladros..");
+            }
         }
     }
 }

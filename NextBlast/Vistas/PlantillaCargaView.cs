@@ -27,6 +27,52 @@ namespace NextBlast.Vistas
             panelHeader.BackColor = objGlobal.primario;
             lbversion.Text = InformacionSoftware.version;
             grafico = new grafico(panelgrafico, panelgrafico);
+
+            loadTiposTaladros();
+        }
+
+        void loadTiposTaladros()
+        {
+            cmbtipotaladro.Items.Add("");
+
+            for (int i = 0; i < objGlobal.tipotaladro.Count; i++)
+            {
+                cmbtipotaladro.Items.Add(objGlobal.tipotaladro[i].Nombre);
+            }
+        }
+
+        void validadorCajas()
+        {
+            if (txtdiametro.Value!=0 && txtprofundidad.Value!=0)
+            {
+                btnagregarCarguio.Enabled = true;
+                btneliminaatCarguio.Enabled = true;
+            }
+            else
+            {
+                btnagregarCarguio.Enabled = false;
+                btneliminaatCarguio.Enabled = false;
+            }
+        }
+
+        private void txtdiametro_ValueChanged(object sender, EventArgs e)
+        {
+            validadorCajas();
+        }
+
+        private void txtprofundidad_ValueChanged(object sender, EventArgs e)
+        {
+            validadorCajas();
+        }
+
+        private void txtdiametro_KeyUp(object sender, KeyEventArgs e)
+        {
+            validadorCajas();
+        }
+
+        private void txtprofundidad_KeyUp(object sender, KeyEventArgs e)
+        {
+            validadorCajas();
         }
     }
 }

@@ -275,59 +275,59 @@
             // nuevoToolStripMenuItem
             // 
             this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
-            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.nuevoToolStripMenuItem.Text = "New";
             // 
             // abrirToolStripMenuItem
             // 
             this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
-            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.abrirToolStripMenuItem.Text = "Load";
             // 
             // guardarToolStripMenuItem
             // 
             this.guardarToolStripMenuItem.Name = "guardarToolStripMenuItem";
-            this.guardarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.guardarToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.guardarToolStripMenuItem.Text = "Save";
             // 
             // guardarComoToolStripMenuItem
             // 
             this.guardarComoToolStripMenuItem.Name = "guardarComoToolStripMenuItem";
-            this.guardarComoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.guardarComoToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.guardarComoToolStripMenuItem.Text = "Save as";
             // 
             // imprimirToolStripMenuItem
             // 
             this.imprimirToolStripMenuItem.Name = "imprimirToolStripMenuItem";
-            this.imprimirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.imprimirToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.imprimirToolStripMenuItem.Text = "Report";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(115, 6);
             // 
             // importarToolStripMenuItem
             // 
             this.importarToolStripMenuItem.Name = "importarToolStripMenuItem";
-            this.importarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.importarToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.importarToolStripMenuItem.Text = "Import";
             // 
             // exportarToolStripMenuItem
             // 
             this.exportarToolStripMenuItem.Name = "exportarToolStripMenuItem";
-            this.exportarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exportarToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.exportarToolStripMenuItem.Text = "Export";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(115, 6);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.salirToolStripMenuItem.Text = "Close";
             // 
             // utilidadesToolStripMenuItem
@@ -396,6 +396,7 @@
             this.plantillasDeCargaToolStripMenuItem.Name = "plantillasDeCargaToolStripMenuItem";
             this.plantillasDeCargaToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
             this.plantillasDeCargaToolStripMenuItem.Text = "Plantillas de Carga";
+            this.plantillasDeCargaToolStripMenuItem.Click += new System.EventHandler(this.plantillasDeCargaToolStripMenuItem_Click);
             // 
             // tiposDeTaladrosToolStripMenuItem
             // 
@@ -429,7 +430,7 @@
             this.kgExplosivoToolStripMenuItem,
             this.diámetroToolStripMenuItem});
             this.taladroToolStripMenuItem.Name = "taladroToolStripMenuItem";
-            this.taladroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.taladroToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.taladroToolStripMenuItem.Text = "Hole";
             // 
             // labelToolStripMenuItem1
@@ -459,7 +460,7 @@
             // cargaToolStripMenuItem
             // 
             this.cargaToolStripMenuItem.Name = "cargaToolStripMenuItem";
-            this.cargaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cargaToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.cargaToolStripMenuItem.Text = "Carga";
             // 
             // tiemposToolStripMenuItem1
@@ -474,7 +475,7 @@
             this.mspaneltiming,
             this.mstroncal});
             this.tiemposToolStripMenuItem1.Name = "tiemposToolStripMenuItem1";
-            this.tiemposToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.tiemposToolStripMenuItem1.Size = new System.Drawing.Size(108, 22);
             this.tiemposToolStripMenuItem1.Text = "Time";
             // 
             // msfondo
@@ -552,7 +553,7 @@
             this.kgRealToolStripMenuItem,
             this.estadoToolStripMenuItem});
             this.tablaToolStripMenuItem.Name = "tablaToolStripMenuItem";
-            this.tablaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tablaToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.tablaToolStripMenuItem.Text = "Table";
             // 
             // labelToolStripMenuItem
@@ -2572,6 +2573,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NextLion";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.nextblast_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.nextblast_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.nextblast_KeyUp);

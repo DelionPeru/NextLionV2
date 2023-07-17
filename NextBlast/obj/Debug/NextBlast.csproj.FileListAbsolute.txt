@@ -11,3 +11,12 @@ D:\DELION\PROYECTOS\NextDet\NextBlast\NextBlast\obj\Debug\NextBlast.pdb
 D:\DELION\PROYECTOS\NextDet\NextBlast\NextBlast\obj\Debug\NextBlast.vistas.proyectoView.resources
 D:\DELION\PROYECTOS\NextDet\NextBlast\NextBlast\obj\Debug\NextBlast.vistas.importarView.resources
 D:\DELION\PROYECTOS\NextDet\NextBlast\NextBlast\obj\Debug\NextBlast.Vistas.PlantillaCargaView.resources
+D:\DELION\PROYECTOS\NextDet\NextBlast\NextBlast\bin\Debug\EntityFramework.dll
+D:\DELION\PROYECTOS\NextDet\NextBlast\NextBlast\bin\Debug\EntityFramework.SqlServer.dll
+D:\DELION\PROYECTOS\NextDet\NextBlast\NextBlast\bin\Debug\System.Data.SQLite.dll
+D:\DELION\PROYECTOS\NextDet\NextBlast\NextBlast\bin\Debug\System.Data.SQLite.EF6.dll
+D:\DELION\PROYECTOS\NextDet\NextBlast\NextBlast\bin\Debug\System.Data.SQLite.Linq.dll
+D:\DELION\PROYECTOS\NextDet\NextBlast\NextBlast\bin\Debug\EntityFramework.xml
+D:\DELION\PROYECTOS\NextDet\NextBlast\NextBlast\bin\Debug\EntityFramework.SqlServer.xml
+D:\DELION\PROYECTOS\NextDet\NextBlast\NextBlast\bin\Debug\System.Data.SQLite.xml
+D:\DELION\PROYECTOS\NextDet\NextBlast\NextBlast\obj\Debug\NextBlast.csproj.CopyComplete
