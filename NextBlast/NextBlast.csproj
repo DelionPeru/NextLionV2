@@ -89,8 +89,10 @@
     <Compile Include="Controles\Grafico.cs" />
     <Compile Include="Global\InformacionSoftware.cs" />
     <Compile Include="Global\Mensaje.cs" />
+    <Compile Include="Grafico\CargaGrafico.cs" />
     <Compile Include="Grafico\graficos.cs" />
     <Compile Include="Grafico\TaladroGrafico.cs" />
+    <Compile Include="Modelo\CargaModelo.cs" />
     <Compile Include="Modelo\ColorProfundidadModelo.cs" />
     <Compile Include="Modelo\EstadoTaladroModelo.cs" />
     <Compile Include="Modelo\ExplosivoModelo.cs" />

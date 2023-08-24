@@ -70,5 +70,15 @@ namespace NextBlast.Controles
                 Mensaje.MsjAdvertencia("Ocurrió un Error", "Advertencia");
             }            
         }
+
+        public void cargarDatosToDatagridCellComboBox(
+            List<string> datos,
+            DataGridView dgv,
+            int indexRow,
+            int indexCol)
+        {
+            DataGridViewComboBoxCell CellSample = (DataGridViewComboBoxCell)dgv.Rows[indexRow].Cells[indexCol];
+            CellSample.DataSource = datos;
+        }
     }
 }

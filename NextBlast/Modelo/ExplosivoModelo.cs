@@ -19,7 +19,7 @@ namespace NextBlast.Modelo
         public int IsCartucho { get; set; }
         public double Longitud { get; set; }
         public double Diametro { get; set; }
-        public string Color { get; set; }
+        public Color Color { get; set; }
         public string Unidad { get; set; }
         public int Tipo { get; set; }
         public double Costo { get; set; }

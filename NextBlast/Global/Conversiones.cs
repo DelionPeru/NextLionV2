@@ -1,6 +1,7 @@
 ﻿using NextBlast.Modelo;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -86,6 +87,17 @@ namespace NextBlast.Global
             return angle;
         }
 
+        public Color getColor(string color)
+        {
+            string[] data = color.Split(',');
+            Color mycolor = Color.FromArgb(
+                Convert.ToInt32(data[0]),
+                Convert.ToInt32(data[1]),
+                Convert.ToInt32(data[2]),
+                Convert.ToInt32(data[3])
+                );
 
+            return mycolor;
+        }
     }
 }

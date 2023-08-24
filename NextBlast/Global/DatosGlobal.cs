@@ -43,5 +43,6 @@ namespace NextBlast.helper
         public List<TipoTaladroModelo> tipotaladro = new List<TipoTaladroModelo>();
         public List<int> indicestaladros_cercanos = new List<int>();
         public List<ExplosivoModelo> explosivos = new List<ExplosivoModelo>();
+        public List<List<CargaModelo>> carga = new List<List<CargaModelo>>();
     }
 }
